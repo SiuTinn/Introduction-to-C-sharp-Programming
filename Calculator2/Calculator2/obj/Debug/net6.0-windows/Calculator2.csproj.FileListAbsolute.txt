@@ -1,0 +1,17 @@
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\bin\Debug\net6.0-windows\Calculator2.exe
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\bin\Debug\net6.0-windows\Calculator2.deps.json
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\bin\Debug\net6.0-windows\Calculator2.runtimeconfig.json
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\bin\Debug\net6.0-windows\Calculator2.dll
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\bin\Debug\net6.0-windows\Calculator2.pdb
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\obj\Debug\net6.0-windows\Calculator2.csproj.AssemblyReference.cache
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\obj\Debug\net6.0-windows\Calculator2.Form1.resources
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\obj\Debug\net6.0-windows\Calculator2.csproj.GenerateResource.cache
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\obj\Debug\net6.0-windows\Calculator2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\obj\Debug\net6.0-windows\Calculator2.AssemblyInfoInputs.cache
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\obj\Debug\net6.0-windows\Calculator2.AssemblyInfo.cs
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\obj\Debug\net6.0-windows\Calculator2.csproj.CoreCompileInputs.cache
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\obj\Debug\net6.0-windows\Calculator2.dll
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\obj\Debug\net6.0-windows\refint\Calculator2.dll
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\obj\Debug\net6.0-windows\Calculator2.pdb
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\obj\Debug\net6.0-windows\Calculator2.genruntimeconfig.cache
+C:\Users\HuiXiutian\source\repos\Calculator2\Calculator2\obj\Debug\net6.0-windows\ref\Calculator2.dll
