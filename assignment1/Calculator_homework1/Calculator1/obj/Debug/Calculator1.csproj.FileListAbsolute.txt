@@ -1,0 +1,16 @@
+C:\Users\HuiXiutian\source\repos\Calculator1\Calculator1\bin\Debug\Calculator1.exe.config
+C:\Users\HuiXiutian\source\repos\Calculator1\Calculator1\bin\Debug\Calculator1.exe
+C:\Users\HuiXiutian\source\repos\Calculator1\Calculator1\bin\Debug\Calculator1.pdb
+C:\Users\HuiXiutian\source\repos\Calculator1\Calculator1\obj\Debug\Calculator1.csproj.AssemblyReference.cache
+C:\Users\HuiXiutian\source\repos\Calculator1\Calculator1\obj\Debug\Calculator1.csproj.SuggestedBindingRedirects.cache
+C:\Users\HuiXiutian\source\repos\Calculator1\Calculator1\obj\Debug\Calculator1.csproj.CoreCompileInputs.cache
+C:\Users\HuiXiutian\source\repos\Calculator1\Calculator1\obj\Debug\Calculator1.exe
+C:\Users\HuiXiutian\source\repos\Calculator1\Calculator1\obj\Debug\Calculator1.pdb
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework1\Calculator1\obj\Debug\Calculator1.csproj.AssemblyReference.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework1\Calculator1\obj\Debug\Calculator1.csproj.SuggestedBindingRedirects.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework1\Calculator1\obj\Debug\Calculator1.csproj.CoreCompileInputs.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework1\Calculator1\obj\Debug\Calculator1.exe
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework1\Calculator1\obj\Debug\Calculator1.pdb
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework1\Calculator1\bin\Debug\Calculator1.exe.config
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework1\Calculator1\bin\Debug\Calculator1.exe
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework1\Calculator1\bin\Debug\Calculator1.pdb

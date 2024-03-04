@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Calculator_homework2/1.0.0": {
+        "runtime": {
+          "Calculator_homework2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Calculator_homework2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,17 @@
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\bin\Debug\net6.0-windows\Calculator_homework2.exe
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\bin\Debug\net6.0-windows\Calculator_homework2.deps.json
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\bin\Debug\net6.0-windows\Calculator_homework2.runtimeconfig.json
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\bin\Debug\net6.0-windows\Calculator_homework2.dll
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\bin\Debug\net6.0-windows\Calculator_homework2.pdb
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\obj\Debug\net6.0-windows\Calculator_homework2.csproj.AssemblyReference.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\obj\Debug\net6.0-windows\Calculator_homework2.Form1.resources
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\obj\Debug\net6.0-windows\Calculator_homework2.csproj.GenerateResource.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\obj\Debug\net6.0-windows\Calculator_homework2.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\obj\Debug\net6.0-windows\Calculator_homework2.AssemblyInfoInputs.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\obj\Debug\net6.0-windows\Calculator_homework2.AssemblyInfo.cs
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\obj\Debug\net6.0-windows\Calculator_homework2.csproj.CoreCompileInputs.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\obj\Debug\net6.0-windows\Calculator_homework2.dll
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\obj\Debug\net6.0-windows\refint\Calculator_homework2.dll
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\obj\Debug\net6.0-windows\Calculator_homework2.pdb
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\obj\Debug\net6.0-windows\Calculator_homework2.genruntimeconfig.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment1\Calculator_homework2\Calculator_homework2\obj\Debug\net6.0-windows\ref\Calculator_homework2.dll
