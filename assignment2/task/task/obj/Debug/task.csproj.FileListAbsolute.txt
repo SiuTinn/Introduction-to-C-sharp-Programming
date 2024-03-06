@@ -1,0 +1,8 @@
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment2\task\task\bin\Debug\task.exe.config
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment2\task\task\bin\Debug\task.exe
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment2\task\task\bin\Debug\task.pdb
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment2\task\task\obj\Debug\task.csproj.AssemblyReference.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment2\task\task\obj\Debug\task.csproj.SuggestedBindingRedirects.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment2\task\task\obj\Debug\task.csproj.CoreCompileInputs.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment2\task\task\obj\Debug\task.exe
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment2\task\task\obj\Debug\task.pdb
