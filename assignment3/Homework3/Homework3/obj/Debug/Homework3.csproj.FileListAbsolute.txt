@@ -1,0 +1,8 @@
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment3\Homework3\Homework3\obj\Debug\Homework3.csproj.AssemblyReference.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment3\Homework3\Homework3\obj\Debug\Homework3.csproj.SuggestedBindingRedirects.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment3\Homework3\Homework3\obj\Debug\Homework3.csproj.CoreCompileInputs.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment3\Homework3\Homework3\bin\Debug\Homework3.exe.config
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment3\Homework3\Homework3\bin\Debug\Homework3.exe
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment3\Homework3\Homework3\bin\Debug\Homework3.pdb
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment3\Homework3\Homework3\obj\Debug\Homework3.exe
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment3\Homework3\Homework3\obj\Debug\Homework3.pdb
