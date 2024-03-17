@@ -133,7 +133,7 @@ namespace Homework3
             List<IShape> shapes = new List<IShape>();
             double totalArea = 0;
             int count = 0;
-            while (count <10)
+            while (count < 10)
             {
                 var shape = ShapeFactory.CreateShape();
                 if (shape.isLegal())
@@ -145,14 +145,5 @@ namespace Homework3
             }
             Console.WriteLine("Total Area is {0}", totalArea);
         }
-
-
-
-}
-
-
-
-
-
-
+    }
 }
