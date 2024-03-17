@@ -108,7 +108,7 @@ namespace Homework3
     public static class ShapeFactory
     {
         private static Random random = new Random();
-        public static IShape CreatShape()
+        public static IShape CreateShape()
         {
             switch (random.Next(3))
             {
@@ -132,16 +132,17 @@ namespace Homework3
         {
             List<IShape> shapes = new List<IShape>();
             double totalArea = 0;
-
-            for(int i = 0; i<10; i++)
+            int count = 0;
+            while (count <10)
             {
-                var shape = ShapeFactory.CreatShape();
+                var shape = ShapeFactory.CreateShape();
                 if (shape.isLegal())
                 {
                     shapes.Add(shape);
                     totalArea += shape.getArea();
+                    count++;
                 }
-        }
+            }
             Console.WriteLine("Total Area is {0}", totalArea);
         }
 
