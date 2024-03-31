@@ -1,0 +1,8 @@
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment5\OrderManage\OrderManage\obj\Debug\OrderManage.csproj.AssemblyReference.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment5\OrderManage\OrderManage\obj\Debug\OrderManage.csproj.SuggestedBindingRedirects.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment5\OrderManage\OrderManage\obj\Debug\OrderManage.csproj.CoreCompileInputs.cache
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment5\OrderManage\OrderManage\bin\Debug\OrderManage.exe.config
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment5\OrderManage\OrderManage\bin\Debug\OrderManage.exe
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment5\OrderManage\OrderManage\bin\Debug\OrderManage.pdb
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment5\OrderManage\OrderManage\obj\Debug\OrderManage.exe
+D:\WorkSpace\Introduction-to-C-sharp-Programming\assignment5\OrderManage\OrderManage\obj\Debug\OrderManage.pdb
