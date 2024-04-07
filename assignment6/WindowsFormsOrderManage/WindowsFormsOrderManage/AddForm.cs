@@ -21,7 +21,7 @@ namespace WindowsFormsOrderManage
 
         private void button_add_2_Click(object sender, EventArgs e)
         {
-            NewOrder = new Order { Id = Convert.ToInt32(textBox_Id.Text), Customer = new Customer { Name = textBox_cname.Text } };
+            NewOrder = new Order { Id = Convert.ToInt32(textBox_Id.Text), Customer = new Customer { Name = textBox_cname.Text },Detail = new List<OrderDetails>() };
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

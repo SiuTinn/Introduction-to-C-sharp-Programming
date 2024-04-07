@@ -18,6 +18,11 @@ namespace OrderManage
                 return Detail.Sum(detail => detail.Quantity * detail.Product.Price);
             }
         }
+
+        public List<OrderDetails> GetAllOrderDetails()
+        {
+            return new List<OrderDetails>(Detail);
+        }
         public override bool Equals(object obj)
         {
             return obj is Order order &&

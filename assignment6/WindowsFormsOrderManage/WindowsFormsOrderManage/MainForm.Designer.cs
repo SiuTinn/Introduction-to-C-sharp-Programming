@@ -33,9 +33,9 @@
             this.button_Add = new System.Windows.Forms.Button();
             this.button_delete = new System.Windows.Forms.Button();
             this.groupBox = new System.Windows.Forms.GroupBox();
-            this.radioButton_id = new System.Windows.Forms.RadioButton();
-            this.radioButton_cname = new System.Windows.Forms.RadioButton();
             this.radioButton_amount = new System.Windows.Forms.RadioButton();
+            this.radioButton_cname = new System.Windows.Forms.RadioButton();
+            this.radioButton_id = new System.Windows.Forms.RadioButton();
             this.textBox_search = new System.Windows.Forms.TextBox();
             this.button_search = new System.Windows.Forms.Button();
             this.button_Update = new System.Windows.Forms.Button();
@@ -62,15 +62,21 @@
             // 
             // dataGridViewDetails
             // 
+            this.dataGridViewDetails.AllowUserToAddRows = false;
+            this.dataGridViewDetails.AllowUserToDeleteRows = false;
             this.dataGridViewDetails.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.dataGridViewDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDetails.Location = new System.Drawing.Point(0, 575);
             this.dataGridViewDetails.Name = "dataGridViewDetails";
+            this.dataGridViewDetails.ReadOnly = true;
             this.dataGridViewDetails.RowHeadersWidth = 62;
             this.dataGridViewDetails.RowTemplate.Height = 37;
             this.dataGridViewDetails.Size = new System.Drawing.Size(1141, 165);
             this.dataGridViewDetails.TabIndex = 1;
+            this.dataGridViewDetails.SelectionChanged += new System.EventHandler(this.dataGridViewDetails_SelectionChanged);
+            this.dataGridViewDetails.Click += new System.EventHandler(this.dataGridViewDetails_SelectionChanged);
+            this.dataGridViewDetails.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridViewDetails_SelectionChanged);
             // 
             // button_Add
             // 
@@ -108,17 +114,17 @@
             this.groupBox.TabStop = false;
             this.groupBox.Text = "查找方式";
             // 
-            // radioButton_id
+            // radioButton_amount
             // 
-            this.radioButton_id.AutoSize = true;
-            this.radioButton_id.Location = new System.Drawing.Point(16, 34);
-            this.radioButton_id.Name = "radioButton_id";
-            this.radioButton_id.Size = new System.Drawing.Size(59, 28);
-            this.radioButton_id.TabIndex = 0;
-            this.radioButton_id.TabStop = true;
-            this.radioButton_id.Text = "Id";
-            this.radioButton_id.UseVisualStyleBackColor = true;
-            this.radioButton_id.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChange);
+            this.radioButton_amount.AutoSize = true;
+            this.radioButton_amount.Location = new System.Drawing.Point(229, 34);
+            this.radioButton_amount.Name = "radioButton_amount";
+            this.radioButton_amount.Size = new System.Drawing.Size(107, 28);
+            this.radioButton_amount.TabIndex = 2;
+            this.radioButton_amount.TabStop = true;
+            this.radioButton_amount.Text = "Amount";
+            this.radioButton_amount.UseVisualStyleBackColor = true;
+            this.radioButton_amount.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChange);
             // 
             // radioButton_cname
             // 
@@ -132,17 +138,17 @@
             this.radioButton_cname.UseVisualStyleBackColor = true;
             this.radioButton_cname.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChange);
             // 
-            // radioButton_amount
+            // radioButton_id
             // 
-            this.radioButton_amount.AutoSize = true;
-            this.radioButton_amount.Location = new System.Drawing.Point(229, 34);
-            this.radioButton_amount.Name = "radioButton_amount";
-            this.radioButton_amount.Size = new System.Drawing.Size(107, 28);
-            this.radioButton_amount.TabIndex = 2;
-            this.radioButton_amount.TabStop = true;
-            this.radioButton_amount.Text = "Amount";
-            this.radioButton_amount.UseVisualStyleBackColor = true;
-            this.radioButton_amount.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChange);
+            this.radioButton_id.AutoSize = true;
+            this.radioButton_id.Location = new System.Drawing.Point(16, 34);
+            this.radioButton_id.Name = "radioButton_id";
+            this.radioButton_id.Size = new System.Drawing.Size(59, 28);
+            this.radioButton_id.TabIndex = 0;
+            this.radioButton_id.TabStop = true;
+            this.radioButton_id.Text = "Id";
+            this.radioButton_id.UseVisualStyleBackColor = true;
+            this.radioButton_id.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChange);
             // 
             // textBox_search
             // 

@@ -14,7 +14,9 @@ namespace WindowsFormsOrderManage
     public partial class MainForm : Form
     {
 
+        //public List<Order> orders;
         public List<Order> orders;
+        public BindingList<OrderDetails> details;
         public OrderService orderService = new OrderService();
         public int searchType;
         public List<Order> ordersSearch;
@@ -34,8 +36,20 @@ namespace WindowsFormsOrderManage
 
         private void LoadData()
         {
-            ordersSearch = orderService.GetAllOrders();
-            dataGridViewMain.DataSource = ordersSearch;
+            orders = orderService.GetAllOrders();
+            dataGridViewMain.DataSource = orders;
+        }
+        private void LoadDataDetail()
+        {
+            if (dataGridViewMain.CurrentRow != null)
+            {
+                var currentOrder = dataGridViewMain.CurrentRow.DataBoundItem as Order;
+                if (currentOrder != null)
+                {
+                    details = new BindingList<OrderDetails>( currentOrder.GetAllOrderDetails());
+                    dataGridViewDetails.DataSource = details;
+                }
+            }
         }
 
         private void LoadDataBySearch()
@@ -55,11 +69,12 @@ namespace WindowsFormsOrderManage
             if (dataGridViewMain.CurrentRow != null)
             {
                 var currentOrder = dataGridViewMain.CurrentRow.DataBoundItem as Order;
-                if (currentOrder != null)
+                if (currentOrder != null&&currentOrder.Detail.Count>0)
                 {
                     dataGridViewDetails.DataSource = currentOrder.Detail;
                 }
             }
+           
         }
 
         private void button_Add_Click(object sender, EventArgs e)
@@ -72,6 +87,7 @@ namespace WindowsFormsOrderManage
                 {
                     orderService.AddOrder(newOrder);
                     LoadData();
+
                 }
                 catch (Exception ex)
                 {
@@ -153,12 +169,12 @@ namespace WindowsFormsOrderManage
                     try
                     {
                         AddDetail addDetail = new AddDetail();
-                        if(addDetail.ShowDialog()== DialogResult.OK)
+                        if (addDetail.ShowDialog() == DialogResult.OK)
                         {
                             OrderDetails newOrderDetail = addDetail.NewDetail;
                             currentOrder.Detail.Add(newOrderDetail);
                             LoadData();
-                            dataGridViewDetails.DataSource = currentOrder.Detail;
+                            //LoadDataDetail();
                         }
                     }
                     catch (Exception ex)
@@ -182,10 +198,9 @@ namespace WindowsFormsOrderManage
                         if (updataForm.ShowDialog() == DialogResult.OK)
                         {
                             string newCname = updataForm.NewCName;
-                            Order newOrder = new Order {Id = currentOrder.Id,Customer = new Customer { Name = newCname} };
+                            Order newOrder = new Order { Id = currentOrder.Id, Customer = new Customer { Name = newCname } };
                             orderService.UpdateOrder(currentOrder.Id, newOrder);
                             LoadData();
-                            dataGridViewDetails.DataSource = currentOrder.Detail;
                         }
                     }
                     catch (Exception ex)
@@ -194,6 +209,16 @@ namespace WindowsFormsOrderManage
                     }
                 }
             }
+        }
+
+        private void dataGridViewDetails_SelectionChanged(object sender, EventArgs e)
+        {
+            return;
+        }
+
+        private void dataGridViewDetails_SelectionChanged(object sender, MouseEventArgs e)
+        {
+            return;
         }
     }
 }
