@@ -8,7 +8,7 @@ namespace OrderManage
 {
     public class OrderService
     {
-        private List<Order> orders = new List<Order>();
+        public List<Order> orders = new List<Order>();
 
         public void AddOrder(Order order)
         {
@@ -49,13 +49,13 @@ namespace OrderManage
             orders.RemoveAll(o=>o.Id==orderId);
         }
 
-        public IEnumerable<Order> SearchByOrderNumber(int orderNumber)
+        public List<Order> SearchByOrderNumber(int orderNumber)
         {
             var query = from order in orders
                         where order.Id == orderNumber
                         orderby order.Detail.Sum(d => d.Quantity * d.Product.Price) descending
                         select order;
-            return query;
+            return query.ToList();
         }
 
         public IEnumerable<Order> SearchByProductName(string productName)
@@ -69,23 +69,23 @@ namespace OrderManage
             
         }
 
-        public IEnumerable<Order> SearchByCustomerName(string customerName)
+        public List<Order> SearchByCustomerName(string customerName)
         {
             var query = from order in orders
                         where order.Customer.Name.Contains(customerName)
                         orderby order.Detail.Sum(d => d.Quantity * d.Product.Price) descending
                         select order;
-            return query;
+            return query.ToList();
         }
 
-        public IEnumerable<Order> SearchByOrderAmount(decimal amount)
+        public List<Order> SearchByOrderAmount(decimal amount)
         {
             var query = from order in orders
                         let totalAmount = order.Detail.Sum(d => d.Quantity * d.Product.Price)
                         where totalAmount == amount
                         orderby totalAmount descending
                         select order;
-            return query;
+            return query.ToList();
         }
 
 

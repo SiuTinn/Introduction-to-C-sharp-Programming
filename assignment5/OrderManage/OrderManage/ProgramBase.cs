@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OrderManage
 {
-    class Program
+    class ProgramBase
     {
         private static OrderService orderService = new OrderService();
 

@@ -10,7 +10,10 @@ namespace OrderManage
     {
         public Product Product { get; set; }
         public int Quantity { get; set; }
-
+        public decimal Price { get
+            {
+                return Product.Price;
+            } }
         public override bool Equals(object obj)
         {
             var detail = obj as OrderDetails;

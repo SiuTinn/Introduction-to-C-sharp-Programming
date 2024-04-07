@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsOrderManage", "WindowsFormsOrderManage\WindowsFormsOrderManage.csproj", "{6857CA9E-7277-4AE8-B4FB-C869CAA651EB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CFEA3BE7-7C80-41EC-B6E1-1B2AB998C4D9} = {CFEA3BE7-7C80-41EC-B6E1-1B2AB998C4D9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManage", "..\..\assignment5\OrderManage\OrderManage\OrderManage.csproj", "{CFEA3BE7-7C80-41EC-B6E1-1B2AB998C4D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6857CA9E-7277-4AE8-B4FB-C869CAA651EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6857CA9E-7277-4AE8-B4FB-C869CAA651EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6857CA9E-7277-4AE8-B4FB-C869CAA651EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6857CA9E-7277-4AE8-B4FB-C869CAA651EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFEA3BE7-7C80-41EC-B6E1-1B2AB998C4D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFEA3BE7-7C80-41EC-B6E1-1B2AB998C4D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFEA3BE7-7C80-41EC-B6E1-1B2AB998C4D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFEA3BE7-7C80-41EC-B6E1-1B2AB998C4D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21086E86-F5C4-4785-B617-4081D3B09161}
+	EndGlobalSection
+EndGlobal

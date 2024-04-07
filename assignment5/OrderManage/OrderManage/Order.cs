@@ -12,6 +12,12 @@ namespace OrderManage
         public List<OrderDetails> Detail { get; set; } = new List<OrderDetails>();
         //a order may have many types of products
         public Customer Customer { get; set; }
+        public decimal Total_Amount
+        {get
+            {
+                return Detail.Sum(detail => detail.Quantity * detail.Product.Price);
+            }
+        }
         public override bool Equals(object obj)
         {
             return obj is Order order &&
@@ -23,8 +29,5 @@ namespace OrderManage
         {
             return $"OrderId: {Id}, Customer: {Customer}, TotalAmount: {Detail.Sum(detail => detail.Quantity * detail.Product.Price)}";
         }
-
-
-
     }
 }
