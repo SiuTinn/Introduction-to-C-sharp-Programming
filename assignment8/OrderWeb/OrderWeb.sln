@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManageWeb", "OrderManageWeb\OrderManageWeb.csproj", "{EA1133F2-3309-4829-B7E7-9957678E007F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderWeb", "OrderWeb\OrderWeb.csproj", "{2A6E7F64-1077-4C09-B90C-DC48B4E3BE20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EA1133F2-3309-4829-B7E7-9957678E007F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA1133F2-3309-4829-B7E7-9957678E007F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA1133F2-3309-4829-B7E7-9957678E007F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA1133F2-3309-4829-B7E7-9957678E007F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A6E7F64-1077-4C09-B90C-DC48B4E3BE20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6E7F64-1077-4C09-B90C-DC48B4E3BE20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6E7F64-1077-4C09-B90C-DC48B4E3BE20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6E7F64-1077-4C09-B90C-DC48B4E3BE20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8B85564E-F47A-4BA5-B7DC-67F5DF601772}
+		SolutionGuid = {2F00F69E-F8CE-4F96-9412-CBB1C8B23BDE}
 	EndGlobalSection
 EndGlobal

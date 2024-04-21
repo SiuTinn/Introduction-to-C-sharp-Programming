@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Management</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://unpkg.com/vue@2.6.14"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body>
+    <div id="app">
+        <el-container>
+            <el-header>
+                <el-button type="primary" @click="showAddDialog = true">Add Order</el-button>
+            </el-header>
+            <el-main>
+                <el-table :data="orders" style="width: 100%" stripe>
+                    <el-table-column prop="orderId" label="Order ID" width="100"></el-table-column>
+                    <el-table-column prop="orderDate" label="Order Date" width="180"></el-table-column>
+                    <el-table-column prop="customerName" label="Customer Name"></el-table-column>
+                    <el-table-column fixed="right" label="Operations" width="150">
+                        <template v-slot:default="scope">
+                            <el-button @click="editOrder(scope.row)" size="mini">Edit</el-button>
+                            <el-button @click="deleteOrder(scope.row.orderId)" type="danger" size="mini">Delete</el-button>
+                        </template>
+                    </el-table-column>
+                </el-table>
+            </el-main>
+            <el-dialog title="Add/Edit Order" :visible.sync="showAddDialog">
+                <el-form :model="currentOrder">
+                    <el-form-item label="Order Date">
+                        <el-date-picker v-model="currentOrder.orderDate" type="date"></el-date-picker>
+                    </el-form-item>
+                    <el-form-item label="Customer Name">
+                        <el-input v-model="currentOrder.customerName"></el-input>
+                    </el-form-item>
+                    <el-form-item label="Order Details">
+                        <el-table :data="currentOrder.details" style="width: 100%">
+                            <el-table-column prop="productName" label="Product Name" width="180">
+                                <template v-slot:default="scope">
+                                    <el-input v-model="scope.row.productName" placeholder="Enter product name"></el-input>
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="price" label="Price" width="100">
+                                <template v-slot:default="scope">
+                                    <el-input v-model="scope.row.price" type="number" placeholder="Enter price"></el-input>
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="quantity" label="Quantity" width="100">
+                                <template v-slot:default="scope">
+                                    <el-input v-model="scope.row.quantity" type="number" placeholder="Enter quantity"></el-input>
+                                </template>
+                            </el-table-column>
+                            <el-table-column label="Operations" width="100">
+                                <template v-slot:default="scope">
+                                    <el-button @click="removeDetail(scope.$index)" type="danger" size="mini">Remove</el-button>
+                                </template>
+                            </el-table-column>
+                        </el-table>
+                        <el-button type="success" @click="addDetail">Add Detail</el-button>
+                    </el-form-item>
+                </el-form>
+                <span slot="footer" class="dialog-footer">
+                    <el-button @click="showAddDialog = false">Cancel</el-button>
+                    <el-button type="primary" @click="saveOrder">Save</el-button>
+                </span>
+            </el-dialog>
+        </el-container>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                orders: [],
+                currentOrder: {
+                    orderDate: new Date(),
+                    customerName: '',
+                    details: []
+                },
+                showAddDialog: false,
+            },
+            methods: {
+                fetchOrders() {
+                    axios.get('/api/order').then(response => {
+                        this.orders = response.data;
+                    }).catch(error => console.error('Error:', error));
+                },
+                deleteOrder(orderId) {
+                    axios.delete(`/api/order/${orderId}`).then(this.fetchOrders);
+                },
+                editOrder(order) {
+                    this.currentOrder = Object.assign({}, order);
+                    this.currentOrder.details = this.currentOrder.details || [];
+                    this.showAddDialog = true;
+                },
+                addDetail() {
+                    this.currentOrder.details.push({ productName: '', price: 0, quantity: 0 });
+                },
+                removeDetail(index) {
+                    this.currentOrder.details.splice(index, 1);
+                },
+                saveOrder() {
+                    let method = this.currentOrder.orderId ? 'put' : 'post';
+                    let url = this.currentOrder.orderId ? `/api/order/${this.currentOrder.orderId}` : '/api/order';
+                    axios[method](url, this.currentOrder).then(() => {
+                        this.fetchOrders();
+                        this.showAddDialog = false;
+                        this.currentOrder = { orderDate: new Date(), customerName: '', details: [] };
+                    }).catch(error => console.error('Error:', error));
+                }
+            },
+            created() {
+                this.fetchOrders();
+            }
+        });
+    </script>
+</body>
+</html>

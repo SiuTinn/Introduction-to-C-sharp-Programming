@@ -1,8 +1,9 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using OrderManageWeb.Models;  // Use your actual namespace where OrderContext is defined
 
-namespace OrderManage
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions;
+using OrderWeb.Models;
+
+namespace order_api
 {
     public class Program
     {
@@ -14,10 +15,10 @@ namespace OrderManage
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
-            // Add DbContext to the DI container
+            //把DbContext加入到容器
             builder.Services.AddDbContext<OrderContext>(opt => opt.UseMySQL(
-                "Server=localhost;Database=todoDB;User=root;Password=root"));
+                "Server=localhost;Database=orderDB;User=root;Password=root"));
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -27,10 +28,10 @@ namespace OrderManage
                 app.UseSwaggerUI();
             }
 
-            app.UseDefaultFiles(); // Enables default static files (index.html or index.htm)
-            app.UseStaticFiles(); // Enable serving static files (front-end files like pages, js, images, etc.)
+            app.UseDefaultFiles(); //启用缺省静态页面（index.html或index.htm）
+            app.UseStaticFiles(); //启用静态文件（页面、js、图片等各种前端文件）
 
-            app.UseHttpsRedirection(); // Enable HTTP to HTTPS redirection
+            app.UseHttpsRedirection(); //启动http到https的重定向
             app.UseAuthorization();
             app.MapControllers();
 
